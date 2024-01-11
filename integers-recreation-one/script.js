@@ -18,26 +18,25 @@ In Fortran - as in any other language - the returned string is not permitted to 
 function listSquared(m, n) {
     // your code
     var devisers=[];
-    for (var i=m;i<n;i++){
-       
+    for (var i=m;i<=n;i++){       
         var arrDevisors=[];
-        for (let j=1;j<i;j++){
-            if ( i % j===0){
-     
+        for (let j=1;j<=i;j++){
+            if ( i % j===0){     
                 arrDevisors.push(j);
             }
         }
         if(arrDevisors.length>0){
-            arrDevisors.forEach(it=>it*it);
-        
-            const sum = arrDevisors.reduce((partialSum, a) => partialSum + a, 0);
+            arrDevisors = arrDevisors.map(it=> it **2); 
+            const sum = arrDevisors.reduce(add,0);
             if(Math.sqrt(sum) % 1 ===0){
-                //devisers.push([i,sum]);
-                
+                devisers.push([i,sum]);                
             }
         }
     }
     return devisers;
 }
 
-console.log(listSquared(1, 250));
+function add(accumulator, a) {
+  return accumulator + a;
+}
+console.log(listSquared(1,250));
