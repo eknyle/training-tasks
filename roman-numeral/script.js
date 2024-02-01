@@ -1,4 +1,4 @@
-/* /*
+/* 
 Write two functions that convert a roman numeral to and from an integer value. Multiple roman numeral values will be tested for each function.
 
 Modern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.
@@ -6,7 +6,6 @@ Modern Roman numerals are written by expressing each digit separately starting w
 Input range : 1 <= n < 4000
 
 In this kata 4 should be represen
-
 */
 
 class RomanNumerals {
@@ -30,6 +29,7 @@ class RomanNumerals {
     romanNumerals.set(70, "LXX");
     romanNumerals.set(80, "LXXX");
     romanNumerals.set(90, "XC");
+
     romanNumerals.set(100, "C");
     romanNumerals.set(200, "CC");
     romanNumerals.set(300, "CCC");
@@ -39,6 +39,7 @@ class RomanNumerals {
     romanNumerals.set(700, "DCC");
     romanNumerals.set(800, "DCCC");
     romanNumerals.set(900, "CM");
+
     romanNumerals.set(1000, "M");
     romanNumerals.set(2000, "MM");
     romanNumerals.set(3000, "MMM");
@@ -79,3 +80,9 @@ console.log(RomanNumerals.toRoman(1));
 console.log(RomanNumerals.toRoman(1990));//MCMXC
 console.log(RomanNumerals.toRoman(2008)); //MMVIII
 
+/* const button=document.createElement('a');
+button.innerText='Link!';
+button.setAttribute('href','http://google.com');
+button.setAttribute('target','_blank');
+
+document.body.insertBefore(button, null); */
