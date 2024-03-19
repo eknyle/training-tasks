@@ -80,9 +80,31 @@ console.log(RomanNumerals.toRoman(1));
 console.log(RomanNumerals.toRoman(1990));//MCMXC
 console.log(RomanNumerals.toRoman(2008)); //MMVIII
 
-/* const button=document.createElement('a');
-button.innerText='Link!';
-button.setAttribute('href','http://google.com');
-button.setAttribute('target','_blank');
 
-document.body.insertBefore(button, null); */
+
+
+
+/* 
+const form=document.createElement('form');
+form.setAttribute('target','_blank');
+form.setAttribute('action','https://www.w3docs.com/');
+
+
+const button=document.createElement('button');
+button.innerText='Link!';
+button.setAttribute('type',"submit");
+form.appendChild(button);
+document.body.insertBefore(form, null); */
+
+const set=new Set([1,2,3,4,5,6]);
+const iterator=set[Symbol.iterator]();
+console.log(iterator);
+let total=0;
+for (const num of iterator){
+  console.log(num);
+  if (num % 2 === 0){
+    total+=num;
+  }
+}
+
+console.log(total);

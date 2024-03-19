@@ -1,0 +1,9 @@
+button {
+    color: white;
+    background-color: black;
+  }
+
+  button:active::after {
+    animation: change-bg 10s step-end infinite;
+  }
+  

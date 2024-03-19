@@ -1,0 +1,31 @@
+/*exmpl from ya*/
+button::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  @keyframes change-bg {
+  
+    0% {
+      background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/01/1.png);
+    }
+  
+    25% {
+      background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/01/2.png);
+    }
+  
+    50% {
+      background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/01/3.png);
+    }
+  
+    75% {
+      background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/01/4.png);
+    }
+  }

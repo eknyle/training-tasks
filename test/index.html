@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        row-gap: 10px;
+    }
+.img{
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%);
+    grid-area: center;
+    align-self: center;
+    justify-self: center;
+
+}
+.border{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    grid-area: center;
+    background-image: linear-gradient(#6e4aff, #49A16C);
+}
+.btn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 'center';
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+}
+.myClass { 
+  position: absolute;
+  clip-path: circle(45%);
+  width: 100px;
+    height: 100px;
+    grid-area: center;
+    align-self: center;
+    justify-self: center;
+}
+  </style>
+
+  <body>
+    <div class="container">
+    <div class="btn">
+        <div  class="border"></div>
+        <img onclick="onClick()" id="first" class="img" src="./1666162995_10-mykaleidoscope-ru-p-tsvetovaya-gamma-instagram-10.jpg" >
+
+    </div> 
+
+    <div class="btn" >
+        <div class="border" ></div>
+        <img  onclick="onClick2()" id="first2" class="img" src="./1666162995_10-mykaleidoscope-ru-p-tsvetovaya-gamma-instagram-10.jpg" >
+    </div>
+
+    <div class="btn">
+        <div  class="border" ></div>
+        <img onclick="onClick3()" id="first3" class="img" src="./1666162995_10-mykaleidoscope-ru-p-tsvetovaya-gamma-instagram-10.jpg" >
+    </div>
+</div>
+
+    <script>
+    
+let student={name:"Vasya", age: 22};
+const copy = JSON.parse(JSON.stringify(student));
+copy.age=43;
+copy.name="Anna";
+console.log(student);
+console.log(copy);
+
+
+
+
+
+      /*    button.addEventListener("click", function () {
+      const text = input.value;
+      const newElement = document.createElement("p");
+      newElement.textContent = text;
+      list.appendChild(newElement);
+      input.value = "";
+
+      // Переход в браузере по введенному адресу в новой вкладке
+      //window.open(`https://${text}`, '_blank');
+    });
+ */
+    </script>
+  </body>
+</html>
